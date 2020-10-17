@@ -3,14 +3,12 @@ import "./Form.css";
 import ClipLoader from "react-spinners/MoonLoader";
 import { css } from "@emotion/core";
 
-
 export default function SearchMovies() {
-
-    const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
-`;
+  const override = css`
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+  `;
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [Loading, setLoading] = useState(false);
@@ -24,14 +22,13 @@ export default function SearchMovies() {
       const res = await fetch(url);
       const data = await res.json();
       console.log(data);
-      
+
       setMovies(data.results);
     } catch (error) {
       console.error(error);
     }
     setLoading(false);
   };
-  
 
   return (
     <>
@@ -53,7 +50,7 @@ export default function SearchMovies() {
         </button>
       </form>
       {Loading ? (
-          <div className="sweet-loading">
+        <div className="sweet-loading">
           <ClipLoader
             css={override}
             size={25}
