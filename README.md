@@ -1,3 +1,7 @@
+![Image of Movie homepage](https://i.imgur.com/TvEF0OQ.png)
+
+![Image of Movie data](https://i.imgur.com/EgkJEjn.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
